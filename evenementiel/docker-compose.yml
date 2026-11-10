@@ -1,0 +1,10 @@
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq_fil_rouge
+    ports:
+      - "5672:5672"      # Port pour le protocole AMQP (communication avec votre code Java)
+      - "15672:15672"    # Port pour l'interface d'administration web
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest

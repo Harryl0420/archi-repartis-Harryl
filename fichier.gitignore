@@ -1,0 +1,17 @@
+# Fichiers compilés Java
+*.class
+*.jar
+*.war
+
+# Dossier de build Maven
+target/
+surefire-reports/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Système
+.DS_Store
+Thumbs.db
